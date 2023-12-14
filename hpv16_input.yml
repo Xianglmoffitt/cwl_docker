@@ -1,0 +1,25 @@
+genome:
+  class: File
+  path: hpv16_ref/HPV16_K02718.1.fa
+  secondaryFiles:
+    - class: File
+      path: hpv16_ref/HPV16_K02718.1.fa.fai
+    - class: File
+      path: hpv16_ref/HPV16_K02718.1.dict
+
+in_bam:
+  class: File
+  path: data/hpv16_input.bam
+
+markdup_bam: markdup.bam
+
+metrics_out: metrics.txt
+
+isCreateIndex_1: true
+
+splitNcigar_bam: splitntrim.bam
+
+CreateIndex_2: true
+
+out_vcf: hpv.vcf
+
